@@ -78,12 +78,22 @@ button {
 }
 
 .uppertitle {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
-
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+}
+
+.uppertitle::before {
+  content: "";
+  display: block;
+
+  width: 60px;
+  height: 1px;
+  background-color: var(--gray-cl-60);
 }
 .uppertitle-light {
   color: var(--gray-cl-60);
@@ -294,13 +304,25 @@ button {
   |============================
 */
 .price {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right:auto;
   background-color: var(--main-bg-cl);
+  background-image: url(../images/price/bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .price-list {
+  display: flex;
+  gap: 30px;
 }
 .price-item {
 }
 .price-inner-list {
+  width: 570px;
+  
+
 }
 .price-inner-item {
   color: var(--gray-cl);
@@ -374,6 +396,28 @@ button {
 .gallery-list {
   --items: 4;
 }
+
+.main-wrapper
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.main-wrapper {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--main-bg-cl);
+  background-image: url(../images/cont/bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center left calc(50% + 408px);
+  background-size: contain;
+}
+.contacts {
+  width: 570px;
+}
+
+
+
 /**
   |============================
   | Contacts styles
@@ -383,6 +427,7 @@ button {
   background-color: var(--main-bg-cl);
 }
 .contacts {
+
 }
 .contacts-address {
   margin-bottom: 72px;
